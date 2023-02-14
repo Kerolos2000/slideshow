@@ -1,0 +1,130 @@
+::-moz-selection {
+  background-color: #000;
+  color: #bdc0cd;
+}
+
+::selection {
+  background-color: #000;
+  color: #bdc0cd;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #bdc0cd;
+}
+
+#main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#main .container .row .allCards .cardX {
+  position: relative;
+}
+#main .container .row .allCards .cardX .allImg {
+  overflow: hidden;
+}
+#main .container .row .allCards .cardX .allImg:hover .img {
+  transform: scale(1.2);
+}
+#main .container .row .allCards .cardX .allImg .img {
+  cursor: pointer;
+  transition: 0.5s;
+}
+#main .container .row .allCards .cardX .text-float {
+  position: absolute;
+  width: 80%;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+#main .container .row .allCards .cardX .text-float p {
+  margin: 0;
+}
+#main .allDiv-float {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .allDiv-float .div-float {
+  transition: 0.5s;
+}
+#main .allDiv-float .div-float .imgAndBtns {
+  position: relative;
+}
+#main .allDiv-float .div-float .imgAndBtns .btns {
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+#main .allDiv-float .div-float .imgAndBtns .closeBtn {
+  top: 0;
+  right: 0;
+  padding: 10px 10px;
+}
+#main .allDiv-float .div-float .imgAndBtns .closeBtn,
+#main .allDiv-float .div-float .imgAndBtns .btns {
+  position: absolute;
+}
+#main .allDiv-float .div-float .imgAndBtns .closeBtn button,
+#main .allDiv-float .div-float .imgAndBtns .btns button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+#main .allDiv-float .div-float .imgAndBtns .closeBtn button:focus,
+#main .allDiv-float .div-float .imgAndBtns .btns button:focus {
+  border: none;
+  outline: none;
+}
+#main .allDiv-float .div-float .imgAndBtns .closeBtn button svg,
+#main .allDiv-float .div-float .imgAndBtns .btns button svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+#main .allDiv-float .div-float .imgAndBtns .closeBtn button svg:hover,
+#main .allDiv-float .div-float .imgAndBtns .btns button svg:hover {
+  opacity: 1;
+}
+#main .allDiv-float .div-float .imgAndBtns .p {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+}
+#main .allDiv-float-show {
+  opacity: 1;
+  z-index: 99;
+}
+
+.opacity80 {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}/*# sourceMappingURL=main.css.map */

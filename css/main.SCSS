@@ -1,0 +1,122 @@
+::selection {
+  background-color: #000;
+  color: #bdc0cd;
+}
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #bdc0cd;
+}
+#main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .container {
+    .row {
+      .allCards {
+        .cardX {
+          position: relative;
+          .allImg {
+            overflow: hidden;
+            &:hover .img {
+              transform: scale(1.2);
+            }
+            .img {
+              cursor: pointer;
+              transition: 0.5s;
+            }
+          }
+          .text-float {
+            position: absolute;
+            width: 80%;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background: rgb(255 255 255 / 50%);
+            backdrop-filter: blur(20px);
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .allDiv-float {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .div-float {
+      transition: 0.5s;
+      .imgAndBtns {
+        position: relative;
+        .btns {
+          top: 50%;
+          transform: translateY(-50%);
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          padding: 0 10px;
+        }
+        .closeBtn {
+          top: 0;
+          right: 0;
+          padding: 10px 10px;
+        }
+        .closeBtn,
+        .btns {
+          position: absolute;
+          button {
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            &:focus {
+              border: none;
+              outline: none;
+            }
+            svg {
+              font-size: 1.5rem;
+              cursor: pointer;
+              opacity: 0.5;
+              transition: 0.5s;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        .p {
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .allDiv-float-show {
+    opacity: 1;
+    z-index: 99;
+  }
+}
+
+.opacity80 {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+img {
+  user-select: none;
+}
