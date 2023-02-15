@@ -26,7 +26,7 @@ body {
   overflow: hidden;
 }
 #main .container .row .allCards .cardX .allImg:hover .img {
-  transform: scale(1.2);
+  transform: rotate(5deg) scale(1.2);
 }
 #main .container .row .allCards .cardX .allImg .img {
   cursor: pointer;

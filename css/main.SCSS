@@ -19,7 +19,7 @@ body {
           .allImg {
             overflow: hidden;
             &:hover .img {
-              transform: scale(1.2);
+              transform: rotate(5deg) scale(1.2);
             }
             .img {
               cursor: pointer;
